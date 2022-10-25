@@ -1,0 +1,244 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* kw_marketing_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-08 16:03+0000\n"
+"PO-Revision-Date: 2022-07-08 16:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__amount
+msgid "Amount"
+msgstr "Витрати"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Amount of sale (amount of payments)"
+msgstr "Сума продажу (сума платежів)"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "CPL (price per lead)"
+msgstr "CPL (ціна ліда)"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "CPO (order price)"
+msgstr "CPO (ціна замовлення"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__utm_campaign_id
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__campaign_ids
+#, python-format
+msgid "Campaign"
+msgstr "Компанія"
+
+#. module: kw_marketing_cost
+#: model_terms:ir.ui.view,arch_db:kw_marketing_cost.kw_marketing_cost_form_view
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__create_uid
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__create_uid
+msgid "Created by"
+msgstr "Створено (ким)"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__create_date
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__create_date
+msgid "Created on"
+msgstr "Створено (коли)"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__currency_id
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__date
+msgid "Date"
+msgstr "Дата"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__display_name
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: kw_marketing_cost
+#: model_terms:ir.ui.view,arch_db:kw_marketing_cost.kw_marketing_cost_form_view
+msgid "Empty field"
+msgstr "Очистити"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__date_to
+msgid "End Date"
+msgstr "Кінцева дата"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Expenses"
+msgstr "Витрати"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__id
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__id
+msgid "ID"
+msgstr ""
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/wizard/kw_marketing_cost_wizard.py:0
+#, python-format
+msgid "Invalid param for default!!!"
+msgstr ""
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost____last_update
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report____last_update
+msgid "Last Modified on"
+msgstr "Останні зміни (коли)"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__write_uid
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення (ким)"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__write_date
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення (коли)"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Leads"
+msgstr "Ліди"
+
+#. module: kw_marketing_cost
+#: model:ir.actions.act_window,name:kw_marketing_cost.kw_marketing_cost_kw_marketing_cost_action_window
+#: model:ir.model,name:kw_marketing_cost.model_kw_marketing_cost
+#: model:ir.module.category,name:kw_marketing_cost.module_category_kw_marketing_cost
+#: model:ir.ui.menu,name:kw_marketing_cost.kw_marketing_cost_kw_marketing_cost_menu
+#: model:ir.ui.menu,name:kw_marketing_cost.kw_marketing_cost_kw_marketing_cost_menu_tree
+msgid "Marketing Cost"
+msgstr "Маркетингова вартість"
+
+#. module: kw_marketing_cost
+#: model:ir.actions.act_window,name:kw_marketing_cost.action_kw_marketing_cost_view
+#: model:ir.model,name:kw_marketing_cost.model_kw_marketing_cost_report
+#: model:ir.ui.menu,name:kw_marketing_cost.kw_marketing_cost_menu
+#: model_terms:ir.ui.view,arch_db:kw_marketing_cost.kw_marketing_cost_form_view
+msgid "Marketing Cost Report"
+msgstr "Звіт маркетингової вартості"
+
+#. module: kw_marketing_cost
+#: model:res.groups,name:kw_marketing_cost.group_kw_marketing_cost_user
+msgid "Marketing Cost User"
+msgstr "Користувач"
+
+#. module: kw_marketing_cost
+#: model:res.groups,name:kw_marketing_cost.group_kw_marketing_cost_admin
+msgid "Marketing Cost admin"
+msgstr "Адміністратор"
+
+#. module: kw_marketing_cost
+#: model:res.groups,name:kw_marketing_cost.group_kw_marketing_cost_manager
+msgid "Marketing Cost manager"
+msgstr "Менеджер"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__utm_medium_id
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__medium_ids
+msgid "Medium"
+msgstr "Середнє"
+
+#. module: kw_marketing_cost
+#: model_terms:ir.ui.view,arch_db:kw_marketing_cost.kw_marketing_cost_form_view
+msgid "Print"
+msgstr "Експорт"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Profitability of marketing tools from"
+msgstr "Рентабельність маркетинг існтрументів за період з"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "ROMI"
+msgstr ""
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Sales (number of orders)"
+msgstr "Продажі (кількість замовлень)"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Sales conversion"
+msgstr "Конверсія в продажі"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__sales_team_ids
+msgid "Sales team"
+msgstr "Команда продажу"
+
+#. module: kw_marketing_cost
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost__utm_source_id
+#: model:ir.model.fields,field_description:kw_marketing_cost.field_kw_marketing_cost_report__source_ids
+msgid "Source"
+msgstr "Джерело"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Source (source)"
+msgstr "Джерело (source)"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/wizard/kw_marketing_cost_wizard.py:0
+#, python-format
+msgid "Start Date"
+msgstr "Дата початку"
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "Tool (medium)"
+msgstr "Інструмент (середнє)"
+
+#. module: kw_marketing_cost
+#: model:ir.actions.report,name:kw_marketing_cost.kw_marketing_cost_report_xlsx
+msgid "marketing_cost_report_xlsx"
+msgstr "Звіт_маркетингової_вартості"
+
+#. module: kw_marketing_cost
+#: model:ir.model,name:kw_marketing_cost.model_report_kw_marketing_cost_kw_marketing_cost_report_xlsx
+msgid "report.kw_marketing_cost.kw_marketing_cost_report_xlsx"
+msgstr ""
+
+#. module: kw_marketing_cost
+#: code:addons/kw_marketing_cost/report/report_marketing_cost.py:0
+#, python-format
+msgid "to"
+msgstr "до"

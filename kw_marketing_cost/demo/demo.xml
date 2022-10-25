@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="kw_marketing_cost_1" model="kw.marketing.cost">
+        <field name="name">Marketing cost 1</field>
+        <field name="date" eval="(DateTime.today() - relativedelta(months=1)).strftime('%Y-%m-%d %H:%M')"/>
+        <field name="campaign_id" ref="utm.utm_campaign_email_campaign_products"/>
+        <field name="medium_id" ref="utm.utm_medium_email"/>
+        <field name="source_id" ref="sale.utm_source_sale_order_0"/>
+        <field name="amount" eval="300"/>
+    </record>
+
+    <record id="kw_marketing_cost_2" model="kw.marketing.cost">
+        <field name="name">Marketing cost 2</field>
+        <field name="date" eval="(DateTime.today() - relativedelta(months=1)).strftime('%Y-%m-%d %H:%M')"/>
+        <field name="campaign_id" ref="utm.utm_campaign_email_campaign_services"/>
+        <field name="medium_id" ref="utm.utm_medium_email"/>
+        <field name="source_id" ref="utm.utm_source_mailing"/>
+        <field name="amount" eval="500"/>
+    </record>
+
+</odoo>

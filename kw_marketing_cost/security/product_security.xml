@@ -1,0 +1,45 @@
+<odoo>
+    <data noupdate="0">
+        <record id="module_category_kw_marketing_cost" model="ir.module.category">
+            <field name="name">Marketing Cost</field>
+            <field name="sequence">32</field>
+        </record>
+
+        <record id="group_kw_marketing_cost_user" model="res.groups">
+            <field name="name">Marketing Cost User</field>
+            <field name="category_id"
+                   ref="kw_marketing_cost.module_category_kw_marketing_cost"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('base.group_user')),]"/>
+        </record>
+
+        <record id="group_kw_marketing_cost_manager" model="res.groups">
+            <field name="name">Marketing Cost manager</field>
+            <field name="category_id"
+                   ref="kw_marketing_cost.module_category_kw_marketing_cost"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('kw_marketing_cost.group_kw_marketing_cost_user')),]"/>
+        </record>
+
+        <record id="group_kw_marketing_cost_admin" model="res.groups">
+            <field name="name">Marketing Cost admin</field>
+            <field name="category_id"
+                   ref="kw_marketing_cost.module_category_kw_marketing_cost"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('kw_marketing_cost.group_kw_marketing_cost_manager')),]"/>
+            <field name="users"
+                   eval="[(4, ref('base.user_root')), (4, ref('base.user_admin')), ]"/>
+        </record>
+    </data>
+    <data noupdate="0">
+        <record id="base.default_user" model="res.users">
+            <field name="groups_id" eval="[(4,ref('kw_marketing_cost.group_kw_marketing_cost_manager'))]"/>
+        </record>
+        <!-- Multi - Company Rules -->
+        <record model="ir.rule" id="kw_marketing_cost_company_rule">
+            <field name="name">kw_marketing_cost_report: multi-company</field>
+            <field name="model_id" ref="model_kw_marketing_cost"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="kw_marketing_cost_form_view" model="ir.ui.view">
+        <field name="name">kw.marketing.cost.form.view</field>
+        <field name="model">kw.marketing.cost.report</field>
+        <field name="arch" type="xml">
+            <form string="Marketing Cost Report">
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                </group>
+                    <group>
+                        <label for="sales_team_ids"/>
+                        <div class="o_row">
+                            <field name="sales_team_ids" widget="many2many_tags"/>
+                            <button name="remove_sales" type="object" string="Empty field"/>
+                        </div>
+                        <label for="medium_ids"/>
+                        <div class="o_row">
+                            <field name="medium_ids" widget="many2many_tags"/>
+                            <button name="remove_medium" type="object" string="Empty field"/>
+                        </div>
+                        <label for="source_ids"/>
+                        <div class="o_row">
+                            <field name="source_ids" widget="many2many_tags"/>
+                            <button name="remove_source" type="object" string="Empty field"/>
+                        </div>
+                        <label for="campaign_ids"/>
+                        <div class="o_row">
+                            <field name="campaign_ids" widget="many2many_tags"/>
+                            <button name="remove_campaign" type="object" string="Empty field"/>
+                        </div>
+                    </group>
+                <footer>
+                    <button name="get_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+                    <button string="Cancel" class="btn btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_kw_marketing_cost_view" model="ir.actions.act_window">
+        <field name="name">Marketing Cost Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">kw.marketing.cost.report</field>
+        <field name="view_id" ref="kw_marketing_cost_form_view"/>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="kw_marketing_cost_menu" name="Marketing Cost Report" action="action_kw_marketing_cost_view"
+              parent="kw_marketing_cost.kw_marketing_cost_kw_marketing_cost_menu" sequence="20"/>
+
+    <record id="kw_marketing_cost_report_xlsx" model="ir.actions.report">
+        <field name="name">marketing_cost_report_xlsx</field>
+        <field name="model">report.kw_marketing_cost.kw_marketing_cost_report_xlsx</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">kw_marketing_cost.kw_marketing_cost_report_xlsx</field>
+        <field name="report_file">Marketing Cost</field>
+        <field name="attachment_use">False</field>
+    </record>
+</odoo>
